@@ -1,0 +1,51 @@
+.brands {
+    background: black;
+    padding: 20px 0;
+}
+
+.brands__wrapper {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 20px;
+
+
+
+
+    @media (max-width: 800px) {
+      justify-content: center;
+    }
+}
+
+.brands__logo1 {
+    
+        @media (max-width: 500px) {
+          width: 117px;
+        }
+}
+.brands__logo2 {
+    
+        @media (max-width: 500px) {
+          width: 64px;
+        }
+}
+.brands__logo3 {
+    
+        @media (max-width: 500px) {
+          width: 110px;
+        }
+}
+.brands__logo4 {
+    
+        @media (max-width: 500px) {
+          width: 127px;
+        }
+}
+.brands__logo5 {
+    
+        @media (max-width: 500px) {
+          width: 135px;
+        }
+}
+

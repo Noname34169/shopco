@@ -2,9 +2,10 @@ import React from 'react'
 import './App.scss'
 import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
-import Contacts from './pages/Contacts'
-import Blog from './pages/Blog'
 import Header from './components/Header/Header'
+import News from './pages/News'
+import Sale from './pages/Sale'
+import Brands from './pages/Brands'
 
 const App = () => {
   return (
@@ -14,8 +15,9 @@ const App = () => {
     
     <Routes>
       <Route path='/' element={<Home />} />
-      <Route path='/blog' element={<Blog />} />
-      <Route path='/contacts' element={<Contacts />} />
+      <Route path='/sale' element={<Sale />} />
+      <Route path='/news' element={<News />} />
+      <Route path='/brands' element={<Brands />} />
     </Routes>
     </>
   )

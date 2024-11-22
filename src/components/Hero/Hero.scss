@@ -1,0 +1,107 @@
+.hero {
+    background: #F2F0F1;
+    padding: 0;
+}
+
+.hero__wrapper {
+    display: flex;
+
+    justify-content: space-between;
+    @media (max-width: 1000px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+
+
+
+    img {
+        width: 500px;
+        
+        @media (max-width: 1050px) {
+          width: 360px;
+          height: 407px;
+        }
+    }
+}
+
+.hero__box {
+    padding: 50px 0;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+    @media (max-width: 1000px) {
+      width: 360px;
+    }
+
+
+    h1 {
+        font-size: 64px;
+
+        text-align: start;
+        letter-spacing: -5px;
+
+        @media (max-width: 1000px) {
+          font-size: 48px;
+        }
+        
+    }
+
+    p {
+        color: #00000099;
+        max-width: 510px;
+
+        @media (max-width: 500px) {
+          font-size: 15px;
+        }
+
+    }
+
+    button {
+        background: black;
+        border-radius: 45px;
+        padding: 10px;
+        color: white;
+        width: 200px;
+        @media (max-width: 1000px) {
+          width: 360px;
+        }
+    }
+
+}
+
+.hero__cards {
+    display: flex;
+    
+    justify-content: center;
+
+    @media (max-width: 500px) {
+      flex-wrap: wrap;
+    }
+}
+
+
+.hero__card {
+
+    padding: 20px;
+
+    h2 {
+        font-size: 30px;
+    }
+    p {
+        color: #00000099;
+    }
+
+    &.actives {
+        border-right: 1px solid grey;
+        border-left: 1px solid grey;
+
+        @media (max-width: 500px) {
+          border: none;
+        }
+
+    }
+}
