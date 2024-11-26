@@ -18,8 +18,20 @@ const Header = () => {
               <div className="header__header">
               <Link to={'/'}><img className='logo__img' src="/SHOP-CO.png" alt="" /></Link>
                 <div className={`header__menu ${isActive ? 'active' : ''}`}>
-                    <Link to={'/sale'}>On Sale</Link>
-                    <Link to={'/news'}>New Arrivals</Link>
+                    <Link to={'/sale'} className='dropdown' >
+                    Shop
+                    <img  src="https://www.iconpacks.net/icons/2/free-arrow-down-icon-3101-thumb.png" alt="" />
+
+                    <div>
+                      <Link to={'/'}>Men</Link>
+                      <Link to={'/'}>Women</Link>
+                      <Link to={'/'}>Kids</Link>
+
+                    </div>
+                    </Link>
+
+                    <a href="/#selling">On Sale</a>
+                    <a href="/#arrivals">New Arrivals</a>
                     <Link to={'/brands'}>Brands</Link>
             </div>                
               </div>

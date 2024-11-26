@@ -1,8 +1,11 @@
 import React from 'react'
+import SaleWrap from '../components/SaleWrap/SaleWrap'
 
 const Sale = () => {
   return (
-    <div>Sale</div>
+    <>
+    <SaleWrap />
+    </>
   )
 }
 

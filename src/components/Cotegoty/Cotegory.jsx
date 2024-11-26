@@ -9,7 +9,8 @@ const Cotegory = () => {
     <>
     <section className="categoty">
         <div className="container">
-            <SectionTitle position='center'>NEW ARRIVALS</SectionTitle>
+            
+            <div id='arrivals'><SectionTitle position='center' >NEW ARRIVALS</SectionTitle></div>
 
             <div className="cotegory__wrapper">
                 <Card image={'/card-1.png'} name='T-SHIRT WITH TAPE DETAILS' rate='4.5' price='120' stars="⭐⭐⭐⭐" />
@@ -23,7 +24,8 @@ const Cotegory = () => {
 
             <hr style={{margin: '60px 0'}} />
 
-            <SectionTitle position='center'>top selling</SectionTitle>
+            
+            <div id='selling'><SectionTitle position='center' >top selling</SectionTitle></div>
 
             <div className="cotegory__wrapper">
                 <Card image={'/card-5.png'} name='VERTICAL STRIPED SHIRT' rate='5.0' price='212' stars="⭐⭐⭐⭐⭐" />
