@@ -5,11 +5,15 @@
 
     h3 {
         margin-top: 8px;
+        
     }
 
     img {
         width: 100%;
         border-radius: 20px;
+
+        aspect-ratio: 1/1.4;
+        object-fit: cover;
     }
 }
 

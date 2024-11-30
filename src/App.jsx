@@ -6,6 +6,7 @@ import Header from './components/Header/Header'
 import News from './pages/News'
 import Sale from './pages/Sale'
 import Brands from './pages/Brands'
+import SinglePage from './pages/SinglePage'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <Route path='/sale' element={<Sale />} />
       <Route path='/news' element={<News />} />
       <Route path='/brands' element={<Brands />} />
+      <Route path='/product/:id' element={<SinglePage />}/>
     </Routes>
     </>
   )
