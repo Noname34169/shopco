@@ -1,14 +1,12 @@
 import React, {useState} from 'react'
 import './Header.scss'
 import { Link } from 'react-router-dom'
+import { useAppContext } from '../../context'
 
 const Header = () => {
-  const [isActive, setIsActive]  = useState(false)
 
+  const {isActive, toggleBurger, user, isAuth, logout} = useAppContext()
 
-  const toggleBurger = () => {
-    setIsActive(!isActive)
-  }
   return (
     <>
     <header className="header">
@@ -49,7 +47,17 @@ const Header = () => {
                    <p>Search for products...</p>
                    </div>
                   <img src="/icon-1.svg" alt="" />
+
+                  {isAuth ? (
+                    <div><b>{user.username}</b> <br />
+                    <button onClick={logout}>logout</button></div>
+                  ):(
+                    <Link to={'/login'}>
                   <img src="/icon-2.svg" alt="" />
+                  </Link>
+                  )}
+
+                  
                 </div>
             </div>
         </div>
