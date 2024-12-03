@@ -13,6 +13,8 @@ const SinglePage = () => {
     <>
     
     <ProductHero product={product} />
+
+
     </>
   )
 }

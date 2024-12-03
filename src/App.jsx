@@ -7,6 +7,7 @@ import News from './pages/News'
 import Sale from './pages/Sale'
 import Brands from './pages/Brands'
 import SinglePage from './pages/SinglePage'
+import Footer from './components/Footer/Footer'
 
 const App = () => {
   return (
@@ -21,6 +22,8 @@ const App = () => {
       <Route path='/brands' element={<Brands />} />
       <Route path='/product/:id' element={<SinglePage />}/>
     </Routes>
+
+    <Footer />
     </>
   )
 }
