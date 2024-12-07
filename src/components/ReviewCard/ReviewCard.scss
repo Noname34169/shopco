@@ -1,0 +1,19 @@
+.review-card {
+        flex-direction: column;
+        display: flex;
+        gap: 12px;
+        color: gray;
+        padding: 28px;
+        border: 1px solid gray;
+        border-radius: 20px;
+
+        h3 {
+            color: black;
+        }
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
