@@ -8,12 +8,18 @@ export const AppContextProvider = ({ children }) => {
 
     const [user, setUser] = useState(null)
 
+    const [replace, setReplace] = useState(null)
+
     const login = (username) => {
         setUser({ username })
     }
 
     const logout = () => {
         setUser(null)
+    }
+
+    const replaceToCart = () => {
+        
     }
 
     const isAuth = !!user
@@ -29,6 +35,7 @@ export const AppContextProvider = ({ children }) => {
         login,
         logout,
         isAuth,
+        replaceToCart,
     };
 
     return <AppContext.Provider value={value}>{children}</AppContext.Provider>;

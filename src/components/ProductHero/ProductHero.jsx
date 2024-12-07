@@ -1,7 +1,10 @@
 import React, { useState } from 'react'
 import './ProductHero.scss'
+import { useAppContext } from '../../context'
 
 const ProductHero = ({ product }) => {
+
+    const {replaceToCart} = useAppContext()
 
     const [num, setNum] = useState(1) 
 
@@ -52,7 +55,7 @@ const ProductHero = ({ product }) => {
                         </div>
 
 
-                    <button>Add to Cart</button>
+                    <button onClick={replaceToCart}>Add to Cart</button>
                     </div>
                 </div>
             </div>

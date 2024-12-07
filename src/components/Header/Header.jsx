@@ -46,7 +46,9 @@ const Header = () => {
                     <img src="/search-icon.svg" alt="" />
                    <p>Search for products...</p>
                    </div>
+                  <Link to={'/basket'}>
                   <img src="/icon-1.svg" alt="" />
+                  </Link>
 
                   {isAuth ? (
                     <div><b>{user.username}</b> <br />

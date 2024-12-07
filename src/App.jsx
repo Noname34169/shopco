@@ -10,6 +10,7 @@ import SinglePage from './pages/SinglePage'
 import Footer from './components/Footer/Footer'
 import SingupPage from './pages/SingupPage'
 import LoginPage from './pages/LoginPage'
+import Basket from './pages/Basket'
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
       <Route path='/product/:id' element={<SinglePage />}/>
       <Route path='/signup' element={<SingupPage />}/>
       <Route path='/login' element={<LoginPage />}/>
+      <Route path='/basket' element={<Basket />}/>
     </Routes>
 
     <Footer />
