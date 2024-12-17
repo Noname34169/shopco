@@ -3,6 +3,7 @@ import Hero from '../components/Hero/Hero'
 import Brands from '../components/Brands/Brands'
 import DressStyle from '../components/DressStyle/DressStyle'
 import Cotegory from '../components/Cotegory/Cotegory'
+import GoodReviews from '../components/GoodReviews/GoodReviews'
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
     <Brands />
     <Cotegory />
     <DressStyle />
+    <GoodReviews />
     </>
   )
 }

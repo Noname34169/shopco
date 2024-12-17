@@ -30,7 +30,9 @@ const ProductHero = ({ product }) => {
                         <img className='product__img' src={product.image} alt="" />
                         <img className='product__img' src={product.image} alt="" />
                     </div>
+                    
                     <img className='product__image' src={product.image} alt="" />
+
                 </div>
 
                 <div className="product__box">
